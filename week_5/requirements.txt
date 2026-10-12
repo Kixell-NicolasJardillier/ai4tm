@@ -18,6 +18,9 @@ ipykernel
 
 synthcity
 opacus<1.5
+# optuna 5 made suggest_int()'s step argument keyword-only; synthcity still passes it
+# positionally, so tuning fails with "suggest_int() takes 4 positional arguments".
+optuna<5
 ipython
 kaleido
 fastapi
